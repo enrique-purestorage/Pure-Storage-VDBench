@@ -196,9 +196,63 @@ Common issues and solutions:
 ## Installation & Running
 
 ### Prerequisites
+
+### 1. Python Environment
 - Python 3.7 or higher installed
 - pip (Python package installer)
 - Git (optional, for cloning repository)
+
+### 2. VDBench Installation
+1. **Download VDBench:**
+   - Go to Oracle's website: https://www.oracle.com/downloads/server-storage/vdbench-downloads.html
+   - Download VDBench (version 50406 or later recommended)
+   - Accept the license agreement
+   - Save the zip file
+
+2. **Install VDBench:**
+   Windows:
+   ```cmd
+   # Create directory for VDBench
+   mkdir C:\vdbench
+   
+   # Extract the downloaded zip to C:\vdbench
+   # Ensure vdbench.bat is in C:\vdbench\vdbench
+   ```
+
+   macOS/Linux:
+   ```bash
+   # Create directory for VDBench
+   mkdir -p ~/vdbench
+   
+   # Extract the downloaded zip
+   unzip vdbench*.zip -d ~/vdbench
+   
+   # Make the script executable
+   chmod +x ~/vdbench/vdbench
+   ```
+
+3. **Add VDBench to System Path:**
+   
+   Windows:
+   - Open System Properties → Advanced → Environment Variables
+   - Under System Variables, find "Path"
+   - Click Edit → New
+   - Add `C:\vdbench`
+   - Click OK to save
+
+   macOS/Linux:
+   ```bash
+   echo 'export PATH="$HOME/vdbench:$PATH"' >> ~/.bashrc
+   source ~/.bashrc
+   ```
+
+4. **Verify Installation:**
+   ```bash
+   vdbench -t
+   # Should display VDBench version information
+   ```
+
+### 3. Storage Performance Tool Installation
 
 ### Installation Steps
 
