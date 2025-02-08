@@ -2,6 +2,29 @@
 
 A comprehensive GUI-based tool for storage performance testing using VDBench, built with Streamlit and Python.
 
+## Quick Start
+
+1. **Prerequisites:**
+   - Python 3.7+
+   - VDBench (version 50406 or later)
+   - Git (optional)
+
+2. **Install VDBench:**
+   - Download from: https://www.oracle.com/downloads/server-storage/vdbench-downloads.html
+   - Follow VDBench installation steps in [Installation Guide](#installation--running)
+
+3. **Install the Tool:**
+   ```bash
+   git clone https://github.com/enrique-purestorage/Pure-Storage-VDBench.git
+   cd Pure-Storage-VDBench
+   pip install -r requirements.txt
+   ```
+
+4. **Run the Tool:**
+   ```bash
+   streamlit run vdbench_ui.py
+   ```
+
 ## Overview
 
 This application provides a user-friendly interface for running storage performance tests and visualizing results in real-time. It leverages VDBench for the underlying testing while providing an intuitive web interface for configuration and monitoring.
@@ -258,8 +281,8 @@ Common issues and solutions:
 
 1. **Clone or download the repository:**
    ```bash
-   git clone [repository-url]
-   # OR download and extract the ZIP file
+   git clone https://github.com/enrique-purestorage/Pure-Storage-VDBench.git
+   cd Pure-Storage-VDBench
    ```
 
 2. **Navigate to the project directory:**
